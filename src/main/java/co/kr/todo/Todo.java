@@ -14,7 +14,9 @@ public class Todo {
     private String description;
     private boolean completed;
     private String priority; // "HIGH", "MEDIUM", "LOW"
-    private boolean pinned;  // 고정 여부
+    private boolean pinned;
+    private String color;    // 예: "red", "blue", "green"
+    private String icon;     // Font Awesome 아이콘 클래스, 예: "fa-star", "fa-circle"
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -28,4 +30,8 @@ public class Todo {
     public void setPriority(String priority) { this.priority = priority; }
     public boolean isPinned() { return pinned; }
     public void setPinned(boolean pinned) { this.pinned = pinned; }
+    public String getColor() { return color; }
+    public void setColor(String color) { this.color = color; }
+    public String getIcon() { return icon; }
+    public void setIcon(String icon) { this.icon = icon; }
 }
